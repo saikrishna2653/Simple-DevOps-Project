@@ -60,6 +60,11 @@
 
 1. Create kubernetes cluser
     ```sh
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster demo.k8s.valaxy.net
+ * edit your node instance group: kops edit ig --name=demo.k8s.valaxy.net nodes
+ * edit your master instance group: kops edit ig --name=demo.k8s.valaxy.net master-us-east-1a
+ 
     kops update cluster demo.k8s.valaxy.net --yes
     ```
 
